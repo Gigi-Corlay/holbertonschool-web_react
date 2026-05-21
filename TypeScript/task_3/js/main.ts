@@ -3,7 +3,6 @@
 import { RowID, RowElement } from "./interface";
 import * as CRUD from "./crud.js";
 
-// création de l'objet
 const row: RowElement = {
   firstName: "Guillaume",
   lastName: "Salva",

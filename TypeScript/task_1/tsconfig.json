@@ -1,5 +1,5 @@
 {
-    "compilerOptions": {
+  "compilerOptions": {
       "outDir": "./dist/",
       "sourceMap": true,
       "noImplicitAny": true,
@@ -12,6 +12,5 @@
       "forceConsistentCasingInFileNames": true,
       "lib": ["ES2020", "DOM"],
       "strict": true
-    }
   }
-  
+}

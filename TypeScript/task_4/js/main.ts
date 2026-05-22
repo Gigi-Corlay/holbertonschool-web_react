@@ -1,34 +1,60 @@
-import { Subject } from "./subjects/Subject";
-import { Cpp } from "./subjects/Cpp";
-import { Java } from "./subjects/Java";
-import { React } from "./subjects/React";
-import { Teacher } from "./subjects/Teacher";
+/// <reference path="./subjects/Teacher.ts" />
+/// <reference path="./subjects/Subject.ts" />
+/// <reference path="./subjects/Cpp.ts" />
+/// <reference path="./subjects/Java.ts" />
+/// <reference path="./subjects/React.ts" />
 
-// Création d'un professeur
-const teacher: Teacher = {
-  firstName: "John",
-  lastName: "Doe",
-  experienceTeachingC: 3,
-  experienceTeachingJava: 5,
+import "./subjects/Teacher";
+import "./subjects/Subject";
+import "./subjects/Cpp";
+import "./subjects/Java";
+import "./subjects/React";
+
+// =======================
+// CPP
+// =======================
+const cpp = new Subjects.Cpp();
+
+// =======================
+// JAVA
+// =======================
+const java = new Subjects.Java();
+
+// =======================
+// REACT
+// =======================
+const react = new Subjects.React();
+
+// =======================
+// TEACHER
+// =======================
+const teacher: Subjects.Teacher = {
+  firstName: "Guillaume",
+  lastName: "Salva",
+  experienceTeachingC: 10,
+  experienceTeachingJava: 10,
+  experienceTeachingReact: 10,
 };
 
-// Cpp
-const cpp = new Cpp();
-cpp.setTeacher = teacher;
+// assign teacher
+cpp.setTeacher(teacher);
+java.setTeacher(teacher);
+react.setTeacher(teacher);
 
+// =======================
+// TESTS CPP
+// =======================
 console.log(cpp.getRequirements());
 console.log(cpp.getAvailableTeacher());
 
-// Java
-const java = new Java();
-java.setTeacher = teacher;
-
+// =======================
+// TESTS JAVA
+// =======================
 console.log(java.getRequirements());
 console.log(java.getAvailableTeacher());
 
-// React
-const react = new React();
-react.setTeacher = teacher;
-
+// =======================
+// TESTS REACT
+// =======================
 console.log(react.getRequirements());
 console.log(react.getAvailableTeacher());

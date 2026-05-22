@@ -14,20 +14,53 @@
 /*!********************!*\
   !*** ./js/main.ts ***!
   \********************/
-() {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("{\nvar teacher3 = {\n    firstName: 'John',\n    fullTimeEmployee: false,\n    lastName: 'Doe',\n    location: 'London',\n    contract: false,\n};\nconsole.log(teacher3);\n\n\n//# sourceURL=webpack://typescript_dependencies/./js/main.ts?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   sumMajorCredits: () => (/* binding */ sumMajorCredits),\n/* harmony export */   sumMinorCredits: () => (/* binding */ sumMinorCredits)\n/* harmony export */ });\n// Function\nfunction sumMajorCredits(subject1, subject2) {\n    return {\n        credits: subject1.credits + subject2.credits,\n    };\n}\nfunction sumMinorCredits(subject1, subject2) {\n    return {\n        credits: subject1.credits + subject2.credits,\n    };\n}\n\n\n//# sourceURL=webpack://typescript_dependencies/./js/main.ts?\n}");
 
 /***/ }
 
 /******/ 	});
+/************************************************************************/
+/******/ 	// The require scope
+/******/ 	var __webpack_require__ = {};
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./js/main.ts"]();
+/******/ 	__webpack_modules__["./js/main.ts"](0,__webpack_exports__,__webpack_require__);
 /******/ 	
 /******/ })()
 ;

@@ -1,23 +1,29 @@
-interface MajorCredits {
+// Interfaces
+export interface MajorCredits {
   credits: number;
-  brand: "major";
+  readonly __brand: unique symbol;
 }
 
-interface MinorCredits {
+export interface MinorCredits {
   credits: number;
-  brand: "minor";
+  readonly __brand: unique symbol;
 }
 
-function sumMajorCredits(subject1: MajorCredits, subject2: MajorCredits): MajorCredits {
+// Function
+export function sumMajorCredits(
+  subject1: MajorCredits,
+  subject2: MajorCredits
+): MajorCredits {
   return {
     credits: subject1.credits + subject2.credits,
-    brand: "major",
-  };
+  } as MajorCredits;
 }
 
-function sumMinorCredits(subject1: MinorCredits, subject2: MinorCredits): MinorCredits {
+export function sumMinorCredits(
+  subject1: MinorCredits,
+  subject2: MinorCredits
+): MinorCredits {
   return {
     credits: subject1.credits + subject2.credits,
-    brand: "minor",
-  };
+  } as MinorCredits;
 }

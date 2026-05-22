@@ -10,12 +10,12 @@ namespace Subjects {
         getRequirements(): string {
             return 'Here is the list of requirements for Java';
         }
-
-        getAvailableTeacher(): string {
-            if (this.teacher.experienceTeachingJava) {
-                return `Available Teacher: ${this.teacher.firstName}`;
-            }
-        
+    
+    getAvailableTeacher(): string {
+        if (this.teacher.experienceTeachingJava) {
+            return `Available Teacher: ${this.teacher.firstName}`;
+        }
+    
             return 'No available teacher';
         }
     }

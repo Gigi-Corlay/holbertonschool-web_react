@@ -13,6 +13,7 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
+        loader: 'ts-loader',
         options: {
           transpileOnly: true
         }
@@ -36,7 +37,7 @@ module.exports = {
     new ForkTsCheckerWebpackPlugin(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: "./dist/index.html"
+      title: "Development"
     })
   ],
 
